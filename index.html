@@ -3,115 +3,167 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>kitttin (boss) - OSRS-style Boss Page</title>
+<title>kitttin (boss)</title>
+
 <style>
-/* Basic reset */
-body { font-family: "Segoe UI", Roboto, Arial, sans-serif; background: #f6f5ef; color:#222; margin:20px; }
-.container { max-width: 980px; margin: 0 auto; }
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f5ef;
+  color:#222;
+  margin:20px;
+}
 
-/* Page title */
-.page-title { font-size:32px; font-weight:700; margin-bottom:6px; color:#0b4a6f; text-transform: none; }
-.subtle { color:#666; margin-bottom:18px; }
+.container {
+  max-width: 980px;
+  margin: auto;
+}
 
-/* Infobox (right column) */
-.infobox { float:right; width:320px; margin-left:18px; background:#fff7ea; border:1px solid #d6c7a3; padding:12px; box-shadow: 0 1px 0 rgba(0,0,0,0.05); font-size:14px; }
-.infobox .image { width:100%; height:180px; background:#e8e2d4 url('kitttin-placeholder.png') center/contain no-repeat; border:1px solid #dcd0b8; margin-bottom:10px; }
-.infobox h3 { font-size:15px; margin:6px 0; color:#0b4a6f; }
-.infobox table { width:100%; border-collapse:collapse; font-size:13px; }
-.infobox td { padding:4px 0; vertical-align:top; }
+/* Title */
+.page-title {
+  font-size: 32px;
+  font-weight: 700;
+  color:#0b4a6f;
+  margin-bottom: 12px;
+}
 
-/* Content area */
-.section { background:#fff; border:1px solid #e7dfc9; padding:14px; margin-bottom:14px; }
-.section h2 { margin-top:0; color:#0b4a6f; font-size:18px; }
+/* Infobox */
+.infobox {
+  float: right;
+  width: 320px;
+  margin-left: 18px;
+  background: #fff7ea;
+  border: 1px solid #d6c7a3;
+  padding: 12px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+  font-size: 14px;
+}
 
-/* Drops table */
-.drops { width:100%; border-collapse:collapse; font-size:14px; }
-.drops th, .drops td { border:1px solid #eee; padding:8px; text-align:left; }
-.drops th { background:#f4efe3; }
+.infobox img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #dcd0b8;
+  margin-bottom: 10px;
+}
 
-/* Small note */
-.small { font-size:13px; color:#555; }
+.infobox table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
 
-/* Clearfix */
-.clearfix::after { content:""; display:table; clear:both; }
+.section {
+  background: #fff;
+  border: 1px solid #e7dfc9;
+  padding: 14px;
+  margin-bottom: 14px;
+}
 
-/* Footer / attribution */
-.footer { font-size:12px; color:#666; margin-top:12px; }
+.section h2 {
+  margin-top: 0;
+  color:#0b4a6f;
+  font-size: 18px;
+}
+
+/* Drops Table */
+.drops {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.drops th, .drops td {
+  border: 1px solid #eee;
+  padding: 8px;
+  text-align: left;
+}
+
+.drops th {
+  background: #f4efe3;
+}
+
+/* Prevent weird wrapping */
+td, p, li {
+  word-break: normal;
+}
+
+/* Mobile layout fix */
+@media (max-width: 700px) {
+  .infobox {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
 </style>
 </head>
+
 <body>
 <div class="container">
-  <div class="clearfix">
-    <div style="float:left;">
-      <div class="page-title">kitttin <span style="font-weight:400;color:#777;">(boss)</span></div>
-      <div class="subtle">A custom OSRS-style boss page created for a private treasure trail</div>
-    </div>
 
-    <aside class="infobox" aria-label="infobox">
-      <div class="image" role="img" aria-label="kitttin image placeholder"></div>
-      <h3>Overview</h3>
-      <table>
-        <tr><td><strong>Name</strong></td><td>kitttin</td></tr>
-        <tr><td><strong>Combat level</strong></td><td>394</td></tr>
-        <tr><td><strong>Hitpoints</strong></td><td>2000</td></tr>
-        <tr><td><strong>Aggressive?</strong></td><td>Only upon awakening</td></tr>
-        <tr><td><strong>Poisonous?</strong></td><td>No</td></tr>
-        <tr><td><strong>Max hit</strong></td><td>Memeage (∞)</td></tr>
-        <tr><td><strong>Attack style</strong></td><td>Bite / Affectionate Roasting</td></tr>
-        <tr><td><strong>Weakness</strong></td><td>Beer, compliments, cuddles, football-looking cats, snacks</td></tr>
-        <tr><td><strong>Immune to</strong></td><td>Pam’s judgement; Bin day</td></tr>
-        <tr><td><strong>Location</strong></td><td>The Bedroom Dungeon (Hard Mode)</td></tr>
-        <tr><td><strong>Release date</strong></td><td>25 November 1994</td></tr>
-        <tr><td><strong>Examine</strong></td><td><em>"Looks human... suspiciously well disguised..."</em></td></tr>
-      </table>
-    </aside>
+<div class="page-title">
+  kitttin <span style="color:#777; font-weight:400;">(boss)</span>
+</div>
 
-    <main style="margin-right:360px;">
-      <section class="section" id="description">
-        <h2>Description</h2>
-        <p><strong>kitttin</strong> is a high-level boss encountered after completing the Master Clue Trail. She is known for her skin-suit disguise, unpredictable attack patterns, and ability to switch between affectionate roasting and devastating meme-based attacks.</p>
-      </section>
+<!-- INFOBOX -->
+<div class="infobox">
 
-      <section class="section" id="mechanics">
-        <h2>Mechanics &amp; Attacks</h2>
-        <p class="small"><strong>Behaviour:</strong> kitttin remains dormant until disturbed; upon awakening she cycles through affectionate and aggressive phases. She may attempt to distract opponents with cuddles or sarcasm.</p>
-        <p class="small"><strong>Attacks:</strong></p>
-        <ul>
-          <li><strong>Bite</strong> — A swift close-range attack that deals variable damage.</li>
-          <li><strong>Affectionate Roasting</strong> — Non-lethal, drains morale (flavour effect).</li>
-          <li><strong>Meme Barrage</strong> — Special attack that can stun targets with pure bewilderment.</li>
-        </ul>
-      </section>
+  <!-- Your OSRS image -->
+  <img src="Kitttin.jpeg" alt="kitttin boss image">
 
-      <section class="section" id="drops">
-        <h2>Drops</h2>
-        <p class="small">The following items are typical drops from kitttin.</p>
+  <h3>Overview</h3>
+  <table>
+    <tr><td><strong>Name</strong></td><td>kitttin</td></tr>
+    <tr><td><strong>Combat level</strong></td><td>394</td></tr>
+    <tr><td><strong>Hitpoints</strong></td><td>2000</td></tr>
+    <tr><td><strong>Aggressive?</strong></td><td>Only upon awakening</td></tr>
+    <tr><td><strong>Poisonous?</strong></td><td>No</td></tr>
+    <tr><td><strong>Max hit</strong></td><td>Memeage (∞)</td></tr>
+    <tr><td><strong>Attack style</strong></td><td>Bite / Affectionate Roasting</td></tr>
+    <tr><td><strong>Weakness</strong></td><td>Beer, compliments, cuddles, football-looking cats, snacks</td></tr>
+    <tr><td><strong>Immune to</strong></td><td>Pam’s judgement; Bin day</td></tr>
+    <tr><td><strong>Location</strong></td><td>The Bedroom Dungeon (Hard Mode)</td></tr>
+    <tr><td><strong>Release date</strong></td><td>25 November 1994</td></tr>
+    <tr><td><strong>Examine</strong></td><td><em>"Looks human... suspiciously well disguised..."</em></td></tr>
+  </table>
+</div>
 
-        <table class="drops" aria-label="drops table">
-          <tr><th>Drop category</th><th>Items</th></tr>
-          <tr><td><strong>Always</strong></td><td>Casket; 1 × Kiss of Triumph</td></tr>
-          <tr><td><strong>Common</strong></td><td>Pam's Blessing; Sarcasm Shards</td></tr>
-        </table>
-      </section>
+<!-- MAIN CONTENT -->
+<div style="margin-right:360px;">
 
-      <section class="section" id="trivia">
-        <h2>Trivia</h2>
-        <ul>
-          <li>Despite the name, kitttin has never been observed chasing a mouse.</li>
-          <li>Players are advised to bring snacks to avoid enraging her.</li>
-        </ul>
-      </section>
+<section class="section">
+  <h2>Description</h2>
+  <p><strong>kitttin</strong> is a high-level boss encountered after completing the Master Clue Trail. She is known for her skin-suit disguise, unpredictable attack patterns, and ability to switch between affectionate roasting and devastating meme-based attacks.</p>
+</section>
 
-      <section class="section" id="notes">
-        <h2>Notes</h2>
-        <p class="small">This page is a private, fan-made recreation of an OSRS Wiki boss entry for use as part of a personalised treasure trail. Replace the image file named <code>kitttin-placeholder.png</code> with your in-game character screenshot to display the boss portrait.</p>
-      </section>
-    </main>
-  </div>
+<section class="section">
+  <h2>Mechanics & Attacks</h2>
+  <p><strong>Behaviour:</strong> kitttin remains dormant until disturbed; upon awakening she cycles between affectionate and aggressive phases.</p>
+  <ul>
+    <li><strong>Bite</strong> — Close-range attack with variable damage.</li>
+    <li><strong>Affectionate Roasting</strong> — Non-lethal, drains morale.</li>
+    <li><strong>Meme Barrage</strong> — Stuns with pure confusion.</li>
+  </ul>
+</section>
 
-  <div style="clear:both;"></div>
+<section class="section">
+  <h2>Drops</h2>
+  <table class="drops">
+    <tr><th>Drop category</th><th>Items</th></tr>
+    <tr><td><strong>Always</strong></td><td>Casket; 1 × Kiss of Triumph</td></tr>
+    <tr><td><strong>Common</strong></td><td>Pam's Blessing; Sarcasm Shards</td></tr>
+  </table>
+</section>
 
-  <div class="footer">Created by ChatGPT — OSRS-style boss page mockup. Copy the HTML file to a GitHub Pages repository to host publicly.</div>
+<section class="section">
+  <h2>Trivia</h2>
+  <ul>
+    <li>Despite the name, kitttin has never been observed chasing a mouse.</li>
+    <li>Players are advised to bring snacks to avoid enraging her.</li>
+  </ul>
+</section>
+
+</div>
+
 </div>
 </body>
 </html>
