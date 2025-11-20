@@ -12,7 +12,12 @@ body {
   color:#222;
   margin:20px;
 }
-
+.infobox-image {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 320px;          /* same width as infobox */
+  border: 1px solid #dcd0b8;
+}
 .container {
   max-width: 980px;
   margin: auto;
@@ -37,11 +42,19 @@ body {
   box-shadow: 0 1px 0 rgba(0,0,0,0.05);
   font-size: 14px;
 }
+<!-- IMAGE ABOVE INFOBOX -->
+<img class="infobox-image" src="Kitttin.PNG" alt="kitttin">
 
-.infobox img {
-  width: auto;
-  height: auto;
-  border: 1px solid #dcd0b8;
+<div class="infobox">
+  <h3>Overview</h3>
+  <table>
+    ...
+  </table>
+</div>
+  .infobox-image {
+  float: right;
+  width: 320px;
+  margin-left: 18px;
   margin-bottom: 10px;
 }
 
