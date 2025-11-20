@@ -1,187 +1,224 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>kitttin (boss)</title>
 
 <style>
+
+/* ================================
+   GLOBAL STYLES (OSRS WIKI LOOK)
+==================================*/
+
 body {
-  font-family: Arial, sans-serif;
-  background: #f6f5ef;
-  color:#222;
-  margin:20px;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #f6f5ef;
+    color: #222;
+    margin: 20px;
 }
-.infobox-image {
-  display: block;
-  margin: 0 auto 10px auto;
-  width: 320px;          /* same width as infobox */
-  border: 1px solid #dcd0b8;
-}
+
 .container {
-  max-width: 980px;
-  margin: auto;
+    max-width: 1080px;
+    margin: auto;
 }
 
-/* Title */
 .page-title {
-  font-size: 32px;
-  font-weight: 700;
-  color:#0b4a6f;
-  margin-bottom: 12px;
+    font-size: 34px;
+    font-weight: 700;
+    color: #0b4a6f;
+    margin-bottom: 15px;
 }
 
-/* Infobox */
+/* ================================
+   INFOBOX SECTION
+==================================*/
+
+.infobox-image {
+    float: right;
+    width: 300px;
+    border: 1px solid #d6c7a3;
+    margin-left: 20px;
+    margin-bottom: 12px;
+    background: white;
+}
+
 .infobox {
-  float: right;
-  width: 320px;
-  margin-left: 18px;
-  background: #fff7ea;
-  border: 1px solid #d6c7a3;
-  padding: 12px;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.05);
-  font-size: 14px;
-}
-<!-- IMAGE ABOVE INFOBOX -->
-<img class="infobox-image" src="Kitttin.PNG" alt="kitttin">
-
-<div class="infobox">
-  <h3>Overview</h3>
-  <table>
-    ...
-  </table>
-</div>
-  .infobox-image {
-  float: right;
-  width: 320px;
-  margin-left: 18px;
-  margin-bottom: 10px;
+    float: right;
+    width: 300px;
+    background: #fff7ea;
+    border: 1px solid #d6c7a3;
+    padding: 12px;
+    font-size: 13px;
+    margin-left: 20px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
 }
 
 .infobox table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 13px;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
 }
 
+.infobox td {
+    padding: 4px 0;
+    border-bottom: 1px solid #e6dcc4;
+}
+
+.infobox tr:last-child td {
+    border-bottom: none;
+}
+
+/* ================================
+   SECTION PANELS (OSRS STYLE)
+==================================*/
+
 .section {
-  background: #fff;
-  border: 1px solid #e7dfc9;
-  padding: 14px;
-  margin-bottom: 14px;
+    background: #ffffff;
+    border: 1px solid #e7dfc9;
+    padding: 14px;
+    margin-bottom: 14px;
 }
 
 .section h2 {
-  margin-top: 0;
-  color:#0b4a6f;
-  font-size: 18px;
+    margin-top: 0;
+    color: #0b4a6f;
+    font-size: 18px;
+    border-bottom: 1px solid #d6c7a3;
+    padding-bottom: 4px;
 }
 
-/* Drops Table */
+/* ================================
+   DROPS TABLE (OSRS LOOK)
+==================================*/
+
 .drops {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-}
-
-.drops th, .drops td {
-  border: 1px solid #eee;
-  padding: 8px;
-  text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
 }
 
 .drops th {
-  background: #f4efe3;
+    background: #efe7d4;
+    border: 1px solid #d4c8a8;
+    padding: 6px;
 }
 
-/* Prevent weird wrapping */
-td, p, li {
-  word-break: normal;
+.drops td {
+    border: 1px solid #e7e0cd;
+    padding: 8px;
 }
 
-/* Mobile layout fix */
+/* ================================
+   COLLAPSIBLE (OSRS STYLE)
+==================================*/
+
+details {
+    border: 1px solid #e7dfc9;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 14px;
+}
+
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #0b4a6f;
+}
+
+/* ================================
+   MOBILE FIXES
+==================================*/
+
 @media (max-width: 700px) {
-  .infobox {
-    float: none;
-    width: 100%;
-    margin: 0 0 20px 0;
-  }
+    .infobox,
+    .infobox-image {
+        float: none;
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
 }
+
 </style>
 </head>
-
 <body>
+
 <div class="container">
 
+<!-- =============================================
+     TITLE
+==================================================-->
 <div class="page-title">
-  kitttin <span style="color:#777; font-weight:400;">(boss)</span>
+    kitttin <span style="color:#777; font-weight:400;">(boss)</span>
 </div>
 
-<!-- INFOBOX -->
+<!-- =============================================
+     INFOBOX + IMAGE
+==================================================-->
+
+<img class="infobox-image" src="Kitttin.PNG" alt="kitttin">
+
 <div class="infobox">
+    <h3 style="margin-top:0;">Overview</h3>
 
-  <img class="image" src="Kitttin.PNG" alt="kitttin">
-
-  <h3>Overview</h3>
-  <table>
-    ...
-  </table>
+    <table>
+        <tr><td><strong>Name</strong></td><td>kitttin</td></tr>
+        <tr><td><strong>Combat level</strong></td><td>394</td></tr>
+        <tr><td><strong>Hitpoints</strong></td><td>2000</td></tr>
+        <tr><td><strong>Aggressive?</strong></td><td>Only upon awakening</td></tr>
+        <tr><td><strong>Poisonous?</strong></td><td>No</td></tr>
+        <tr><td><strong>Max hit</strong></td><td>Memeage (∞)</td></tr>
+        <tr><td><strong>Attack style</strong></td><td>Bite / Affectionate Roasting</td></tr>
+        <tr><td><strong>Weakness</strong></td><td>Beer, compliments, cuddles, football-shaped cats, snacks</td></tr>
+        <tr><td><strong>Immune to</strong></td><td>Pam’s judgement, Bin day</td></tr>
+        <tr><td><strong>Location</strong></td><td>The Bedroom Dungeon (Hard Mode)</td></tr>
+        <tr><td><strong>Release date</strong></td><td>25 November 1994</td></tr>
+        <tr><td><strong>Examine</strong></td>
+            <td><em>"Looks human... suspiciously well disguised..."</em></td>
+        </tr>
+    </table>
 </div>
 
-  <h3>Overview</h3>
-  <table>
-    <tr><td><strong>Name</strong></td><td>kitttin</td></tr>
-    <tr><td><strong>Combat level</strong></td><td>394</td></tr>
-    <tr><td><strong>Hitpoints</strong></td><td>2000</td></tr>
-    <tr><td><strong>Aggressive?</strong></td><td>Only upon awakening</td></tr>
-    <tr><td><strong>Poisonous?</strong></td><td>No</td></tr>
-    <tr><td><strong>Max hit</strong></td><td>Memeage (∞)</td></tr>
-    <tr><td><strong>Attack style</strong></td><td>Bite / Affectionate Roasting</td></tr>
-    <tr><td><strong>Weakness</strong></td><td>Beer, compliments, cuddles, football-shaped cats, snacks</td></tr>
-    <tr><td><strong>Immune to</strong></td><td>Pam’s judgement, Bin day</td></tr>
-    <tr><td><strong>Location</strong></td><td>The Bedroom Dungeon (Hard Mode)</td></tr>
-    <tr><td><strong>Release date</strong></td><td>25 November 1994</td></tr>
-    <tr><td><strong>Examine</strong></td><td><em>"Looks human... suspiciously well disguised..."</em></td></tr>
-  </table>
-</div>
-
-<!-- MAIN CONTENT -->
-<div style="margin-right:360px;">
-
+<!-- =============================================
+     MAIN CONTENT
+==================================================-->
+<div style="margin-right:340px;"> <!-- Leave space for infobox -->
+    
 <section class="section">
-  <h2>Description</h2>
-  <p><strong>kitttin</strong> is a high-level boss encountered after completing the Master Clue Trail. She is known for her skin-suit disguise, unpredictable attack patterns, and ability to switch between affectionate roasting and devastating meme-based attacks.</p>
+    <h2>Description</h2>
+    <p><strong>kitttin</strong> is a high-level boss encountered after completing the Master Clue Trail. She is known for her skin-suit disguise, unpredictable attack patterns, and ability to switch between affectionate roasting and devastating meme-based attacks.</p>
 </section>
 
 <section class="section">
-  <h2>Mechanics & Attacks</h2>
-  <p><strong>Behaviour:</strong> kitttin remains dormant until disturbed; upon awakening she cycles between affectionate and aggressive phases.</p>
-  <ul>
-    <li><strong>Bite</strong> — Close-range attack with variable damage.</li>
-    <li><strong>Affectionate Roasting</strong> — Non-lethal, drains morale.</li>
-    <li><strong>Meme Barrage</strong> — Stuns with pure confusion.</li>
-  </ul>
+    <h2>Mechanics & Attacks</h2>
+    <ul>
+        <li><strong>Bite</strong> — Close-range attack with variable damage.</li>
+        <li><strong>Affectionate Roasting</strong> — Non-lethal, drains morale.</li>
+        <li><strong>Meme Barrage</strong> — Stuns with pure confusion.</li>
+    </ul>
 </section>
+
+<!-- COLLAPSIBLE DROPS (OSRS STYLE) -->
+<details open>
+    <summary>💠 Drops</summary>
+    <table class="drops">
+        <tr><th>Drop category</th><th>Items</th></tr>
+        <tr><td><strong>Always</strong></td><td>Casket; 1 × Kiss of Triumph</td></tr>
+        <tr><td><strong>Common</strong></td><td>Pam's Blessing; Sarcasm Shards</td></tr>
+    </table>
+</details>
 
 <section class="section">
-  <h2>Drops</h2>
-  <table class="drops">
-    <tr><th>Drop category</th><th>Items</th></tr>
-    <tr><td><strong>Always</strong></td><td>Casket; 1 × Kiss of Triumph</td></tr>
-    <tr><td><strong>Common</strong></td><td>Pam's Blessing; Sarcasm Shards</td></tr>
-  </table>
+    <h2>Trivia</h2>
+    <ul>
+        <li>Despite the name, kitttin has never been observed chasing a mouse.</li>
+        <li>Players are advised to bring snacks to avoid enraging her.</li>
+    </ul>
 </section>
 
-<section class="section">
-  <h2>Trivia</h2>
-  <ul>
-    <li>Despite the name, kitttin has never been observed chasing a mouse.</li>
-    <li>Players are advised to bring snacks to avoid enraging her.</li>
-  </ul>
-</section>
+</div> <!-- end main content -->
 
-</div>
+</div> <!-- end container -->
 
-</div>
 </body>
 </html>
